@@ -5,14 +5,14 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 module.exports = {
+  // plugins: ['docusaurus-plugin-sass'],
   title: "Entry",
   tagline: "A resource blog",
   url: "https://beyond9thousand.github.io",
-  baseUrl: "/",
-  trailingSlash: false,
+  baseUrl: '/entry/',
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/b9klogo.png",
+  favicon: 'img/b9klogo.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -60,7 +60,7 @@ module.exports = {
         title: "beyond9thousand",
         logo: {
           alt: "My Site Logo",
-          src: "img/b9klogo.png",
+          src: 'img/b9klogo.png',
         },
         items: [
           {
