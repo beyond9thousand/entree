@@ -4,21 +4,20 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+module.exports = {
+  title: "Entry",
+  tagline: "A resource blog",
+  url: "https://beyond9thousand.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/b9klogo.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
+  organizationName: "beyond9thousand", // Usually your GitHub org/user name.
+  projectName: "entry", // Usually your repo name.
+  // deploymentBranch: "gh-pages",
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -57,17 +56,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "beyond9thousand",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/b9klogo.png",
         },
         items: [
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Getting started",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -84,7 +83,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Getting started",
                 to: "/docs/intro",
               },
             ],
@@ -127,20 +126,4 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-};
-
-module.exports = {
-  title: "Enter freedom",
-  tagline: "A resource blog",
-  url: "https://beyond9thousand.github.io",
-  baseUrl: "/entry/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "beyond9thousand", // Usually your GitHub org/user name.
-  projectName: "entry", // Usually your repo name.
-  // deploymentBranch: "gh-pages",
 };
