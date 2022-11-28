@@ -15,18 +15,18 @@ You will come across several places on this blog with scrambled looking text. Th
 <details><summary>Exercise</summary>
 <summary> Decode the base64 code to obtain a URL </summary>
 <tabs>
-  <TabItem value="dec" label="Decode">
+  <tabitem value="dec" label="Decode">
 
 ```
 aHR0cHM6Ly9naXRodWIuY29tLw==
 ```
 
-  </TabItem>
-  <TabItem value="res" label="Result">
+  </tabitem>
+  <tabitem value="res" label="Result">
 
 https://github.com/
 
-  </TabItem>
+  </tabitem>
 </tabs>
 </details>
 

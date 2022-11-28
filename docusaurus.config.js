@@ -52,6 +52,8 @@ module.exports = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -78,7 +80,7 @@ module.exports = {
             label: "Getting started",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/beyond9thousand/",
             label: "GitHub",
             position: "right",
           },
@@ -107,15 +109,15 @@ module.exports = {
                 label: "Twitter",
                 href: "https://twitter.com/beyond9thousand",
               },
-              {
-                label: "Website",
-                href: "https://beyond9thousand.vercel.app/",
-              },
             ],
           },
           {
             title: "More",
             items: [
+              {
+                label: "Website",
+                href: "https://beyond9thousand.vercel.app/",
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/beyond9thousand/",
@@ -123,7 +125,7 @@ module.exports = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} beyond9thousand | Built with <a href="https://docusaurus.io/">Docusaurus</a>`,
       },
       prism: {
         theme: lightCodeTheme,
