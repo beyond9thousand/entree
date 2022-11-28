@@ -2,9 +2,6 @@
 sidebar_position: 1
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Getting started
 
 :::caution
@@ -17,7 +14,7 @@ You will come across several places on this blog with scrambled looking text. Th
 
 <details><summary>Exercise</summary>
 <summary> Decode the base64 code to obtain a URL </summary>
-<Tabs>
+<tabs>
   <TabItem value="dec" label="Decode">
 
 ```
@@ -30,5 +27,13 @@ aHR0cHM6Ly9naXRodWIuY29tLw==
 https://github.com/
 
   </TabItem>
-</Tabs>
+</tabs>
 </details>
+
+## Points to remember
+
+- Descriptions & information provided for each resource mentioned in this blog are not error-free
+- All **applications** (only) mentioned in this blog are open-source projects unless mentioned otherwise
+- Everything mentioned in this blog has either been used in the past or is currently being used by me
+- No resources will be hosted for **Apple devices.** They sport a [heavily locked-down ecosystem](https://gist.github.com/iosecure/357e724811fe04167332ef54e736670d)
+- I do not condone digital piracy. It is illegal. It should not be <sup>[[1]](https://policyreview.info/articles/analysis/digital-piracy-debunked-short-note-digital-threats-and-intermediary-liability) [[2]](https://www.sciencedirect.com/science/article/abs/pii/S0166497206001040) </sup>

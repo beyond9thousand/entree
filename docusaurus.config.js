@@ -5,11 +5,26 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 module.exports = {
-  // plugins: ['docusaurus-plugin-sass'],
-  title: "Entry",
-  tagline: "A resource blog",
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+      }),
+    ],
+  ],
+  title: "entree",
+  tagline: "A resource documentation site",
   url: "https://beyond9thousand.github.io",
-  baseUrl: "/entry/",
+  baseUrl: "/entree/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/b9klogo.png",
@@ -17,7 +32,7 @@ module.exports = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "beyond9thousand", // Usually your GitHub org/user name.
-  projectName: "entry", // Usually your repo name.
+  projectName: "entree", // Usually your repo name.
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -38,13 +53,6 @@ module.exports = {
           // editUrl:
           //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -59,7 +67,8 @@ module.exports = {
         title: "beyond9thousand",
         logo: {
           alt: "My Site Logo",
-          src: "img/b9klogo.png",
+          src: "img/b9klogo_dark.png",
+          srcDark: "img/b9klogo.png",
         },
         items: [
           {
@@ -68,7 +77,6 @@ module.exports = {
             position: "left",
             label: "Getting started",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
@@ -92,16 +100,16 @@ module.exports = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/wtNzY6U7GK",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/beyond9thousand",
+              },
+              {
+                label: "Website",
+                href: "https://beyond9thousand.vercel.app/",
               },
             ],
           },
@@ -109,12 +117,8 @@ module.exports = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/beyond9thousand/",
               },
             ],
           },
