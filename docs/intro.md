@@ -2,10 +2,33 @@
 sidebar_position: 1
 ---
 
-# Introduction
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Getting started
 
-## About me
+:::caution
+Concepts discussed on this page will serve as pre-requisites for utilizing various tools mentioned on this blog. Please do not skip them.
+:::
 
-Get started by **creating a new site**.
+## Converting code blocks
+
+You will come across several places on this blog with scrambled looking text. These are typically URL(s) that have been converted to [base64 format](https://en.wikipedia.org/wiki/Base64)
+
+<details><summary>Exercise</summary>
+<summary> Decode the base64 code to obtain a URL </summary>
+<Tabs>
+  <TabItem value="dec" label="Decode">
+
+```
+aHR0cHM6Ly9naXRodWIuY29tLw==
+```
+
+  </TabItem>
+  <TabItem value="res" label="Result">
+
+https://github.com/
+
+  </TabItem>
+</Tabs>
+</details>

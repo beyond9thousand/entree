@@ -9,16 +9,15 @@ module.exports = {
   title: "Entry",
   tagline: "A resource blog",
   url: "https://beyond9thousand.github.io",
-  baseUrl: '/entry/',
+  baseUrl: "/entry/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: 'img/b9klogo.png',
+  favicon: "img/b9klogo.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "beyond9thousand", // Usually your GitHub org/user name.
   projectName: "entry", // Usually your repo name.
-  // deploymentBranch: "gh-pages",
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -60,7 +59,7 @@ module.exports = {
         title: "beyond9thousand",
         logo: {
           alt: "My Site Logo",
-          src: 'img/b9klogo.png',
+          src: "img/b9klogo.png",
         },
         items: [
           {
