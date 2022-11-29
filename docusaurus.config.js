@@ -22,7 +22,7 @@ module.exports = {
     ],
   ],
   title: "entree",
-  tagline: "A resource documentation site",
+  tagline: "Beginner's guide to freedom",
   url: "https://beyond9thousand.github.io",
   baseUrl: "/entree/",
   onBrokenLinks: "throw",
