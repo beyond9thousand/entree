@@ -45,7 +45,7 @@
   margin: 0% 1% 0% 1%;
 }
 
-@media (max-width: 550px) {
+@media (orientation: portrait) {
   .hero__subtitle {
     font-size: 135%;
   }
@@ -63,7 +63,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 550px) {
+@media (orientation: portrait) {
   .button {
     font-size: calc(1.025rem * var(--ifm-button-size-multiplier));
   }
