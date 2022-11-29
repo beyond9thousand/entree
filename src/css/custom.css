@@ -31,6 +31,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Components */
 .badge--warning {
   --ifm-badge-background-color: #e0a400;
 }
@@ -39,6 +40,20 @@
   --ifm-badge-background-color: #5a86e6;
 }
 
+/* Home page modification */
 .home_slap {
-  margin: 0% 1%;
+  margin: 0% 1% 0% 1%;
+}
+
+@media (max-width: 550px) {
+  .hero__subtitle {
+    font-size: 135%;
+  }
+  .home_slap {
+    margin: 0% 1% 5% 1%;
+  }
+}
+
+.buttons_src-pages-index-module {
+  flex-wrap: wrap;
 }
