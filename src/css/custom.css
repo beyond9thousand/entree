@@ -4,8 +4,6 @@
  * work well for content-centric websites.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -31,6 +29,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.navbar {
+  box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.4);
+}
+
 /* Components */
 .badge--warning {
   --ifm-badge-background-color: #e0a400;
@@ -40,9 +42,15 @@
   --ifm-badge-background-color: #5a86e6;
 }
 
+.hero__subtitle {
+  font-weight: 450;
+  color: black;
+}
+
 /* Home page modification */
 .home_slap {
   margin: 0% 1% 0% 1%;
+  border: 0.15rem solid var(--ifm-button-border-color);
 }
 
 @media (orientation: portrait) {
