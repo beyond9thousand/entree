@@ -45,12 +45,12 @@
   margin: 0% 1% 0% 1%;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 700px) {
   .hero__subtitle {
     font-size: 135%;
   }
   .home_slap {
-    margin: 0% 4% 5% 4%;
+    margin: 0% 5% 5% 5%;
   }
 }
 
@@ -63,7 +63,7 @@
   background-color: transparent;
 }
 
-@media (orientation: portrait) {
+@media (min-width: 550px) {
   .button {
     font-size: calc(1.025rem * var(--ifm-button-size-multiplier));
   }
