@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 /* You can override the default Infima variables here. */
 :root {
@@ -37,4 +37,8 @@
 
 .badge--info {
   --ifm-badge-background-color: #5a86e6;
+}
+
+.home_slap {
+  margin: 0% 1%;
 }
