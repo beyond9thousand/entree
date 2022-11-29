@@ -12,6 +12,14 @@ Concepts discussed on this page will serve as pre-requisites for utilizing vario
 
 You will come across several places on this blog with scrambled looking text. These are typically URL(s) that have been converted to [base64 format](https://en.wikipedia.org/wiki/Base64)
 
+<p>
+
+<div>
+  <a href="https://www.convertsimple.com/convert-base64-to-text/" class="button button--block button--primary"> Convert base64 code into readable text </a>
+</div>
+
+</p>
+
 <details><summary>Exercise</summary>
 <summary> Decode the base64 code to obtain a URL </summary>
 <tabs>

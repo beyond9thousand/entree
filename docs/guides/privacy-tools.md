@@ -14,7 +14,7 @@ This in turn ensures that your accounts remain protected in the event of passwor
 Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes.
 :::
 
-- [andOTP](https://github.com/andOTP/andOTP) <a href="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655"><span class="badge badge--secondary"> Unmaintained </span> </a>
+- [andOTP](https://github.com/andOTP/andOTP) <a href="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655"><span class="_find badge badge--secondary"> Unmaintained </span> </a>
 - [Aegis](https://github.com/beemdevelopment/Aegis)
 
 ## Ad-blocking
@@ -35,7 +35,7 @@ To enable ad-blocking through private DNS:
 - Save your settings and continue browsing
 
 <div>
-  <a href="https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot" class="button button--primary"> Other providers </a>
+  <a href="https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot" class="button button--block button--primary"> Find more DNS providers </a>
 </div>
 
 </p>
@@ -75,10 +75,10 @@ To that end, Searx does not share users' IP addresses or search history with the
 </p>
 
 <div>
-  <a href="https://searx.space/" class="button button--primary"> Searx instances </a>
+  <a href="https://searx.space/" class="button button--block button--primary"> Explore publicly hosted Searx instances </a>
 </div>
 
 </details>
 
 - [Startpage](https://www.startpage.com/)
-- [Duckduckgo](https://duckduckgo.com/) <a href="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/"> <span class="badge badge--warning"> Controversial </span> </a>
+- [Duckduckgo](https://duckduckgo.com/) <a href="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/"> <span class="_find badge badge--warning"> Controversial </span> </a>
