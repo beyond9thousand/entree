@@ -58,12 +58,12 @@ Work in progress
 
 Use a disposable email address instead of your work or personal account when unsure about signing up on a new service. An added benefit of using throaway email addresses is that you avoid ending up in random news mail letter subscriptions & other such annoyances.
 
-- [Alt Address](https://altaddress.org/) <span class="badge badge--primary"> Suggested </span>
+- [Alt Address](https://altaddress.org/) <span class="tag_badge badge badge--primary"> Suggested </span>
 - [Guerilla Mail](https://www.guerrillamail.com/)
 
 ## Search Engines
 
-<details><summary>Searx <span class="badge badge--primary"> Suggested </span></summary>
+<details><summary>Searx <span class="tag_badge badge badge--primary"> Suggested </span></summary>
 
 <p>
 

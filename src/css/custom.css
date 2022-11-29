@@ -57,3 +57,14 @@
 .buttons_src-pages-index-module {
   flex-wrap: wrap;
 }
+
+.tag_badge {
+  color: var(--ifm-color-primary);
+  background-color: transparent;
+}
+
+@media (min-width: 550px) {
+  .button {
+    font-size: calc(1.025rem * var(--ifm-button-size-multiplier));
+  }
+}
