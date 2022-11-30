@@ -77,17 +77,17 @@ module.exports = {
           srcDark: "img/b9klogo.png",
         },
         items: [
-          {
-            type: "doc",
-            docId: "about",
-            position: "left",
-            label: "Introduction",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "about",
+          //   position: "left",
+          //   label: "Introduction",
+          // },
           {
             type: "doc",
             docId: "start",
             position: "left",
-            label: "Getting started",
+            label: "Resources",
           },
           {
             href: "https://github.com/beyond9thousand/",
