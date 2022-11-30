@@ -42,9 +42,10 @@
   --ifm-badge-background-color: #5a86e6;
 }
 
-.hero__subtitle {
-  font-weight: 450;
-  color: black;
+h1.hero__title {
+  background: linear-gradient(45deg, #09009f, #00ff95 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Home page modification */
