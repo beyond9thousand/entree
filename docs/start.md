@@ -24,7 +24,7 @@ Convert base64 code into readable text
 
 Decode the base64 code to obtain a URL
 
-<tabs>
+<tab>
   <tabitem value="dec" label="Decode">
 
 ```
@@ -37,7 +37,7 @@ aHR0cHM6Ly9naXRodWIuY29tLw==
 https://github.com/
 
   </tabitem>
-</tabs>
+</tab>
 </expand>
 
 ## Points to remember
