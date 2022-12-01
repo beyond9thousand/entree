@@ -14,14 +14,16 @@ You will come across several places on this blog with scrambled looking text. Th
 
 <p>
 
-<div>
-  <a href="https://www.convertsimple.com/convert-base64-to-text/" class="button button--block button--primary"> Convert base64 code into readable text </a>
-</div>
+<more link="https://www.convertsimple.com/convert-base64-to-text/">
+Convert base64 code into readable text
+</more>
 
 </p>
 
-<details><summary>Exercise</summary>
-<summary> Decode the base64 code to obtain a URL </summary>
+<expand title="Exercise">
+
+Decode the base64 code to obtain a URL
+
 <tabs>
   <tabitem value="dec" label="Decode">
 
@@ -36,7 +38,7 @@ https://github.com/
 
   </tabitem>
 </tabs>
-</details>
+</expand>
 
 ## Points to remember
 

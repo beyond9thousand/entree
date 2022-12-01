@@ -30,6 +30,16 @@
 }
 
 /* Components */
+
+.alert {
+  --ifm-link-color: inherit;
+  --ifm-link-decoration: inherit;
+}
+
+.boundary {
+  border: 1px solid var(--ifm-alert-border-color);
+}
+
 .navbar {
   box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.4);
 }
@@ -50,8 +60,6 @@
 /* Home page modification */
 .banner_title {
   font-size: 3rem;
-  font-weight: 550;
-  padding: 2.5rem;
   background: var(--ifm-color-primary);
   background-clip: text;
   -webkit-text-fill-color: transparent;

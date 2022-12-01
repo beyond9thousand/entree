@@ -19,11 +19,11 @@ Using private messaging services, including social media platforms without activ
 
 ## Ad-blocking
 
-<tabs>
+<tab>
   <tabitem value="android" label="Android">
 <p>
 
-### Private DNS
+<expand title="Private DNS">
 
 Starting with android 9, you have the option of enabling seamless ad-block system wide. This is achieved using [private DNS](https://adguard.com/en/blog/adguard-dns-announcement.html) providers.
 
@@ -34,9 +34,11 @@ To enable ad-blocking through private DNS:
 - To use [AdGuard's](https://en.wikipedia.org/wiki/AdGuard) resolver, enter `dns.adguard.com`
 - Save your settings and continue browsing
 
-<div>
-  <a href="https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot" class="button button--block button--primary"> Find more DNS providers </a>
-</div>
+<more link="https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot">
+Find more DNS providers
+</more>
+
+</expand>
 
 </p>
 
@@ -52,33 +54,29 @@ Work in progress
 :::
 
   </tabitem>
-</tabs>
+</tab>
 
 ## Temporary email services
 
 Use a disposable email address instead of your work or personal account when unsure about signing up on a new service. An added benefit of using throaway email addresses is that you avoid ending up in random news mail letter subscriptions & other such annoyances.
 
-- [Alt Address](https://altaddress.org/) <span class="tag_badge badge badge--primary"> Suggested </span>
+- [Alt Address](https://altaddress.org/) 
 - [Guerilla Mail](https://www.guerrillamail.com/)
 
 ## Search Engines
 
-<details><summary>Searx <span class="tag_badge badge badge--primary"> Suggested </span></summary>
-
-<p>
+<expand title="Searx" >
 
 [Searx](https://github.com/searx/searx) is a free and open-source metasearch engine that uses the [GNU Affero General Public License version 3](https://www.gnu.org/licenses/agpl-3.0.en.html) to protect its users' privacy.
 To that end, Searx does not share users' IP addresses or search history with the search engines that provide results. Search engine tracking cookies are blocked, preventing user-profiling-based results modification.
 
 > Any user may run their own [instance](https://linuxreviews.org/Searx#What_it_is_and_isn.27t) of Searx to maximise privacy, avoid congestion on public instances, preserve customised settings even if browser cookies are cleared, allow auditing of the source code being run, and so on.
 
-</p>
+<more link="https://searx.space/">
+Explore publicly hosted Searx instances
+</more>
 
-<div>
-  <a href="https://searx.space/" class="button button--block button--primary"> Explore publicly hosted Searx instances </a>
-</div>
-
-</details>
+</expand>
 
 - [Startpage](https://www.startpage.com/)
 - [Duckduckgo](https://duckduckgo.com/) <a href="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/"> <span class="_find badge badge--warning"> Controversial </span> </a>
