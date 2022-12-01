@@ -1,7 +1,7 @@
 # Privacy tools
 
 :::info
-Mobile apps mentioned here are deliberately excluded from [mobile apps](#) to make them more distinctly visible
+Android apps mentioned here are deliberately excluded from the [software section](/docs/guides/software) to make them more distinctly visible
 :::
 
 ## Two-factor authentication apps

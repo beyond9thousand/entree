@@ -86,7 +86,7 @@ Cloudstream repository
 
 <expand title="Aniyomi">
 
-- Unofficial fork of [Tachiyomi](/guides/software/#tachiyomi-badge-variant-ghost-text-manga)
+- Unofficial fork of [Tachiyomi](https://tachiyomi.org/)
 - Adds anime streaming capabilities on top of original features
 
 :::info
