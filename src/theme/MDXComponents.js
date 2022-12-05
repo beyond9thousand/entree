@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
@@ -18,10 +18,9 @@ export default {
   // Re-use the default mapping
   ...MDXComponents,
   FontAwesomeIcon: FontAwesomeIcon,
+  // FontAwesomeIcon: (props) => <FontAwesomeIcon size="lg" {...props} />,
   expand: Expand,
   more: More,
   tab: Tabs,
   tabitem: TabItem,
 };
-
-// FontAwesomeIcon: (props) => <FontAwesomeIcon size="lg" {...props} />,

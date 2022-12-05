@@ -55,8 +55,19 @@ module.exports = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
+        blog: false,
         theme: {
           customCss: [require.resolve("./src/css/custom.css")],
+        },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+        },
+        googleAnalytics: {
+          trackingID: "G-GJSVJ5ZB61",
+          anonymizeIP: true,
         },
       }),
     ],
