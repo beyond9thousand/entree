@@ -26,7 +26,7 @@ export function Expand({ children, title }) {
 export function More({ children, link }) {
   return (
     <div>
-      <a href={link} class="button button--block button--primary">
+      <a href={link} className="button button--block button--primary">
         {children}
       </a>
     </div>

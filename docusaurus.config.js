@@ -56,9 +56,7 @@ module.exports = {
           showLastUpdateTime: true,
         },
         theme: {
-          customCss: [
-            require.resolve("./src/css/custom.css"),
-          ],
+          customCss: [require.resolve("./src/css/custom.css")],
         },
       }),
     ],

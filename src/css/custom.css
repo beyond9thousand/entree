@@ -45,11 +45,16 @@
 }
 
 .badge--warning {
-  --ifm-badge-background-color: #e0a400;
+  background-color: var(--ifm-color-warning-contrast-background);
 }
 
 .badge--info {
-  --ifm-badge-background-color: #5a86e6;
+  background-color: var(--ifm-color-info-contrast-background);
+}
+
+.badge--secondary {
+  background-color: var(--ifm-color-secondary-contrast-background);
+  color: white;
 }
 
 .tag_badge {

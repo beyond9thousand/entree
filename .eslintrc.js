@@ -10,16 +10,16 @@ module.exports = {
   },
   extends: [
     "plugin:mdx/recommended",
-    // "eslint:recommended",
-    // "plugin:react/recommended",
-    // "plugin:@docusaurus/recommended",
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@docusaurus/recommended",
   ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@docusaurus"],
+  plugins: ["react-hooks", "react", "@docusaurus"],
   rules: {},
   settings: {
     "import/resolver": {
