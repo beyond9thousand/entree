@@ -32,3 +32,11 @@ export function More({ children, link }) {
     </div>
   );
 }
+
+export function Badge({ name, link, children }) {
+  return (
+    <a href={link} target="_blank">
+      <span className={`badge badge--${name}`}>{children}</span>
+    </a>
+  );
+}

@@ -1,23 +1,39 @@
 # Privacy tools
 
+Placeholder introduction
+
+## <FontAwesomeIcon icon="fa-solid fa-list-check" /> Password manager
+
+A password manager is a an application designed to store and manage online credentials. Passwords are generally stored in an encrypted database and locked behind a master password. Most applications also offer an in-built password generator. User created passwords are prone to [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack) and inconvenient to maintain across a large number of accounts.
+
 :::info
-Android apps mentioned here are deliberately excluded from the [software section](/docs/guides/software) to make them more distinctly visible
+Most modern browsers will also offer password generators and save your login information as a choice. Google offers this on Android devices to make the experience more integrated. However, this should not be preferred over [standalone solutions](https://www.zdnet.com/article/is-it-ok-to-use-your-browsers-built-in-password-manager/)
 :::
 
-## Two-factor authentication apps
+### Built-in cloud integration
 
-[Two-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication#Mobile_phone-based_authentication) or **2FA** is an additional layer of security used to ensure that people attempting to access an online account are who they claim to be. Users are required to provide a secondary password-like phrase, usually through a backup code or a periodically generated 6-digit number that is unique to every account.
+- [Bitwarden](https://bitwarden.com/)
+- [LastPass](https://alternativeto.net/outgoing/software/lastpass) <badge name="warning">Proprietary</badge>
 
-This in turn ensures that your accounts remain protected in the event of password breaches or mishandling due to human error on the user end.
+### Manual cloud integration
+
+- [KeePassXC](https://keepassxc.org/)
+- [KeepassDX](https://www.keepassdx.com/) <badge name="primary">Android</badge>
+
+## <FontAwesomeIcon icon="fa-solid fa-key" /> Two-factor authentication
+
+[Two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication) or **2FA** is a secondary code in addition to your account password. The code can either be a 6-digit [OTP](https://en.wikipedia.org/wiki/One-time_password) shared with you through your registered phone number. It can also be periodically generated on your mobile device using a [TOTP authenticator](https://www.twilio.com/docs/glossary/totp). A fallback method is usually provided known as [backup codes](https://support.authy.com/hc/en-us/articles/1260803525789-What-is-a-Recovery-or-Backup-Code-) in the event of loss of access to other, more preferable 2FA options.
 
 :::danger
-Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes.
+Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes even for everyday general usage.
 :::
 
-- [andOTP](https://github.com/andOTP/andOTP) <a href="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655"><span class="_find badge badge--secondary"> Unmaintained </span> </a>
+### TOTP applications
+
+- [andOTP](https://github.com/andOTP/andOTP) <badge link="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655" name="secondary" >Unmaintained</badge>
 - [Aegis](https://github.com/beemdevelopment/Aegis)
 
-## Ad-blocking
+## <FontAwesomeIcon icon="fa-solid fa-ban" /> Ad-blocking
 
 <tab>
   <tabitem value="android" label="Android">
@@ -31,7 +47,12 @@ To enable ad-blocking through private DNS:
 
 - Go to **Settings > Network and Internet > Advanced > Private DNS**
 - Select the field for entering private DNS provider
-- To use [AdGuard's](https://en.wikipedia.org/wiki/AdGuard) resolver, enter `dns.adguard.com`
+- To use [AdGuard's](https://en.wikipedia.org/wiki/AdGuard) resolver, copy and paste the following server address
+
+```
+dns.adguard.com
+```
+
 - Save your settings and continue browsing
 
 <more link="https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot">
@@ -56,14 +77,16 @@ Work in progress
   </tabitem>
 </tab>
 
-## Temporary email services
+## <FontAwesomeIcon icon="fa-regular fa-envelope" /> Temporary email services
 
 Use a disposable email address instead of your work or personal account when unsure about signing up on a new service. An added benefit of using throaway email addresses is that you avoid ending up in random news mail letter subscriptions & other such annoyances.
 
 - [Alt Address](https://altaddress.org/)
 - [Guerilla Mail](https://www.guerrillamail.com/)
 
-## Search Engines
+## <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> Search Engines
+
+Popular search engines provided by proprietary companies are known for tracking user data and using this information to then throw targeted advertisements at the user. Using a good search engine is the difference between constant intrusion of privacy, favoring confirmation biases and an uncensored, non-intrusive, informative search experience.
 
 <expand title="Searx" >
 
@@ -77,4 +100,4 @@ To that end, Searx does not share users' IP addresses or search history with the
 </expand>
 
 - [Startpage](https://www.startpage.com/)
-- [Duckduckgo](https://duckduckgo.com/) <a href="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/"> <span class="_find badge badge--warning"> Controversial </span> </a>
+- [Duckduckgo](https://duckduckgo.com/) <badge link="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/" name="warning">Controversial</badge>

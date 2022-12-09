@@ -13,11 +13,12 @@ module.exports = {
       ({
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
         // ```
+        hashed: true,
+        indexBlog: false,
       }),
     ],
   ],
@@ -135,6 +136,10 @@ module.exports = {
           {
             title: "More",
             items: [
+              {
+                label: "Contact",
+                href: "mailto:beyond9thousand@gmail.com",
+              },
               {
                 label: "Website",
                 href: "https://beyond9thousand.vercel.app/",

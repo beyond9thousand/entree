@@ -5,19 +5,24 @@ module.exports = {
     jest: true,
     node: true,
   },
-  globals: {
-    JSX: true,
-  },
+  // globals: {
+  //   JSX: true,
+  // },
   extends: [
     "plugin:mdx/recommended",
-    "eslint:recommended",
+    // "eslint:recommended",
     "plugin:react-hooks/recommended",
+    // "plugin:react/recommended",
     "plugin:@docusaurus/recommended",
   ],
   overrides: [],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+parserOptions: {
+    parser: 'babel-eslint',
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
   plugins: ["react-hooks", "react", "@docusaurus"],
   rules: {},

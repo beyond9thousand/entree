@@ -44,6 +44,10 @@
   box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.4);
 }
 
+.badge--primary {
+  background-color: var(--ifm-color-primary-contrast-background);
+}
+
 .badge--warning {
   background-color: var(--ifm-color-warning-contrast-background);
 }
@@ -65,9 +69,10 @@
 /* Home page modification */
 .banner_title {
   font-size: 3rem;
-  background: var(--ifm-color-primary);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--ifm-color-primary);
+  /* background: var(--ifm-color-primary); */
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .home_slap {
