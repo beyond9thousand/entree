@@ -2,7 +2,7 @@ import React from "react";
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
-import { Expand, More, Badge } from "@site/src/components/Custom";
+import { Expand, More, Badge, Visit } from "@site/src/components/Custom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -24,4 +24,5 @@ export default {
   tab: Tabs,
   tabitem: TabItem,
   badge: Badge,
+  visit: Visit,
 };

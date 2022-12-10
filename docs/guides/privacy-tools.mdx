@@ -1,43 +1,37 @@
 # Privacy tools
 
-Placeholder introduction
+Every individual should be able to uphold their right to privacy online, including but not limited to protection of personal data and respect for confidentiality. Personal data should only be processed or transferred to third parties with your informed consent with the **clear and concise choice** to opt out.
 
-## <FontAwesomeIcon icon="fa-solid fa-list-check" /> Password manager
+## <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> Search Engines
 
-A password manager is a an application designed to store and manage online credentials. Passwords are generally stored in an encrypted database and locked behind a master password. Most applications also offer an in-built password generator. User created passwords are prone to [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack) and inconvenient to maintain across a large number of accounts.
+Popular search engines provided by proprietary companies are known for tracking user data and using this information to then throw targeted advertisements at the user. Using a good search engine is the difference between constant intrusion of privacy, favoring confirmation biases and an uncensored, non-intrusive, informative search experience.
 
-:::info
-Most modern browsers will also offer password generators and save your login information as a choice. Google offers this on Android devices to make the experience more integrated. However, this should not be preferred over [standalone solutions](https://www.zdnet.com/article/is-it-ok-to-use-your-browsers-built-in-password-manager/)
-:::
+<expand title="Searx" >
 
-### Built-in cloud integration
+[Searx](https://github.com/searx/searx) is a free and open-source metasearch engine that uses the [GNU Affero General Public License version 3](https://www.gnu.org/licenses/agpl-3.0.en.html) to protect its users' privacy.
+To that end, Searx does not share users' IP addresses or search history with the search engines that provide results. Search engine tracking cookies are blocked, preventing user-profiling-based results modification.
 
-- [Bitwarden](https://bitwarden.com/)
-- [LastPass](https://alternativeto.net/outgoing/software/lastpass) <badge name="warning">Proprietary</badge>
+> Any user may run their own [instance](https://linuxreviews.org/Searx#What_it_is_and_isn.27t) of Searx to maximise privacy, avoid congestion on public instances, preserve customised settings even if browser cookies are cleared, allow auditing of the source code being run, and so on.
 
-### Manual cloud integration
+<more link="https://searx.space/">Explore publicly hosted Searx instances</more>
 
-- [KeePassXC](https://keepassxc.org/)
-- [KeepassDX](https://www.keepassdx.com/) <badge name="primary">Android</badge>
+</expand>
 
-## <FontAwesomeIcon icon="fa-solid fa-key" /> Two-factor authentication
+- [Startpage](https://www.startpage.com/)
+- [Brave Search](https://search.brave.com/)
+- [Duckduckgo](https://duckduckgo.com/) <badge link="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/" name="warning">Controversial</badge>
 
-[Two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication) or **2FA** is a secondary code in addition to your account password. The code can either be a 6-digit [OTP](https://en.wikipedia.org/wiki/One-time_password) shared with you through your registered phone number. It can also be periodically generated on your mobile device using a [TOTP authenticator](https://www.twilio.com/docs/glossary/totp). A fallback method is usually provided known as [backup codes](https://support.authy.com/hc/en-us/articles/1260803525789-What-is-a-Recovery-or-Backup-Code-) in the event of loss of access to other, more preferable 2FA options.
-
-:::danger
-Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes even for everyday general usage.
-:::
-
-### TOTP applications
-
-- [andOTP](https://github.com/andOTP/andOTP) <badge link="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655" name="secondary" >Unmaintained</badge>
-- [Aegis](https://github.com/beemdevelopment/Aegis)
+<visit link="https://searchengine.party/" header="Compare search engines">
+  Web page for comparing popular search engines across some privacy-centric data
+  points.
+</visit>
 
 ## <FontAwesomeIcon icon="fa-solid fa-ban" /> Ad-blocking
 
+Don't pretend that you love to see advertisements.
+
 <tab>
-  <tabitem value="android" label="Android">
-<p>
+  <tabitem value="Android">
 
 <expand title="Private DNS">
 
@@ -59,16 +53,16 @@ dns.adguard.com
   Find more DNS providers
 </more>
 
-</expand>
-
-</p>
+<br />
 
 :::info
 Advertisements shown inside major social media apps are an exception to this feature since they do not fall under consistent [host names](https://en.wikipedia.org/wiki/Ad_blocking#Hosts_file_and_DNS_manipulation) required for enforcing ad-blocking
 :::
 
+</expand>
+
   </tabitem>
-  <tabitem value="windows" label="Windows">
+  <tabitem value="PC">
 
 :::info
 Work in progress
@@ -77,27 +71,40 @@ Work in progress
   </tabitem>
 </tab>
 
+## <FontAwesomeIcon icon="fa-solid fa-lock" /> Password manager
+
+A password manager is a an application designed to store and manage online credentials. Passwords are generally stored in an encrypted database and locked behind a master password. Most applications also offer an in-built password generator. User created passwords are prone to [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack) and inconvenient to maintain across a large number of accounts.
+
+:::info
+Most modern browsers will also offer password generators and offer to save your login information. Google offers this on Android devices to make the experience more integrated. However, this should not be preferred over [standalone solutions](https://www.zdnet.com/article/is-it-ok-to-use-your-browsers-built-in-password-manager/)
+:::
+
+### Built-in cloud integration
+
+- [Bitwarden](https://bitwarden.com/)
+- [LastPass](https://alternativeto.net/outgoing/software/lastpass) <badge name="warning">Proprietary</badge>
+
+### Manual cloud integration
+
+- [KeePassXC](https://keepassxc.org/)
+- [KeepassDX](https://www.keepassdx.com/) <badge name="primary">Android</badge>
+
+## <FontAwesomeIcon icon="fa-solid fa-fingerprint" /> Two-factor authentication
+
+[Two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication) or **2FA** is a secondary code in addition to your account password. The code can either be a 6-digit [OTP](https://en.wikipedia.org/wiki/One-time_password) shared with you through your registered phone number. It can also be periodically generated on your mobile device using a [TOTP authenticator](https://www.twilio.com/docs/glossary/totp). A fallback method is usually provided known as [backup codes](https://support.authy.com/hc/en-us/articles/1260803525789-What-is-a-Recovery-or-Backup-Code-) in the event of loss of access to other, more preferable 2FA options.
+
+:::danger
+Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes even for everyday general usage.
+:::
+
+### TOTP applications
+
+- [andOTP](https://github.com/andOTP/andOTP) <badge link="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655" name="secondary" >Unmaintained</badge>
+- [Aegis](https://github.com/beemdevelopment/Aegis)
+
 ## <FontAwesomeIcon icon="fa-regular fa-envelope" /> Temporary email services
 
 Use a disposable email address instead of your work or personal account when unsure about signing up on a new service. An added benefit of using throaway email addresses is that you avoid ending up in random news mail letter subscriptions & other such annoyances.
 
 - [Alt Address](https://altaddress.org/)
 - [Guerilla Mail](https://www.guerrillamail.com/)
-
-## <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> Search Engines
-
-Popular search engines provided by proprietary companies are known for tracking user data and using this information to then throw targeted advertisements at the user. Using a good search engine is the difference between constant intrusion of privacy, favoring confirmation biases and an uncensored, non-intrusive, informative search experience.
-
-<expand title="Searx" >
-
-[Searx](https://github.com/searx/searx) is a free and open-source metasearch engine that uses the [GNU Affero General Public License version 3](https://www.gnu.org/licenses/agpl-3.0.en.html) to protect its users' privacy.
-To that end, Searx does not share users' IP addresses or search history with the search engines that provide results. Search engine tracking cookies are blocked, preventing user-profiling-based results modification.
-
-> Any user may run their own [instance](https://linuxreviews.org/Searx#What_it_is_and_isn.27t) of Searx to maximise privacy, avoid congestion on public instances, preserve customised settings even if browser cookies are cleared, allow auditing of the source code being run, and so on.
-
-<more link="https://searx.space/">Explore publicly hosted Searx instances</more>
-
-</expand>
-
-- [Startpage](https://www.startpage.com/)
-- [Duckduckgo](https://duckduckgo.com/) <badge link="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/" name="warning">Controversial</badge>

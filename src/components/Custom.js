@@ -40,3 +40,25 @@ export function Badge({ name, link, children }) {
     </a>
   );
 }
+
+export function Visit({ header, children, link }) {
+  return (
+    <div class="card">
+      <div class="card__header">
+        <h3>{header}</h3>
+      </div>
+      <div class="card__body">
+        <p>{children}</p>
+      </div>
+      <div class="card__footer">
+        <a
+          href={link}
+          target="_blank"
+          class="button button--primary button--block"
+        >
+          Visit website
+        </a>
+      </div>
+    </div>
+  );
+}
