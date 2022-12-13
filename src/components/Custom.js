@@ -62,3 +62,16 @@ export function Visit({ header, children, link }) {
     </div>
   );
 }
+
+// import Tabs from "@theme/Tabs";
+
+// export function Tab({ children }) {
+//   return (
+//     <Tabs
+//       style={{
+//       }}
+//     >
+//       {children}
+//     </Tabs>
+//   );
+// }

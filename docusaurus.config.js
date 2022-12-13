@@ -68,7 +68,7 @@ module.exports = {
         },
         googleAnalytics: {
           trackingID: "G-GJSVJ5ZB61",
-          anonymizeIP: true,
+          // anonymizeIP: true,
         },
       }),
     ],
@@ -151,7 +151,7 @@ module.exports = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} beyond9thousand | Built with <a href="https://docusaurus.io/">Docusaurus</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} beyond9thousand | Built with <a target="_blank" href="https://docusaurus.io/">Docusaurus</a>`,
       },
       prism: {
         theme: lightCodeTheme,
