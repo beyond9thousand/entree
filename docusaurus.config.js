@@ -102,8 +102,8 @@ module.exports = {
             label: "Resources",
           },
           {
-            href: "https://github.com/beyond9thousand/",
-            label: "GitHub",
+            href: "https://github.com/beyond9thousand/entree",
+            label: "Source",
             position: "right",
           },
         ],

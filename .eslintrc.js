@@ -16,13 +16,13 @@ module.exports = {
     "plugin:@docusaurus/recommended",
   ],
   overrides: [],
-parserOptions: {
-    parser: 'babel-eslint',
+  parserOptions: {
+    parser: "babel-eslint",
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
   plugins: ["react-hooks", "react", "@docusaurus"],
   rules: {},
