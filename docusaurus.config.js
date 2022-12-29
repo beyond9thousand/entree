@@ -108,6 +108,7 @@ module.exports = {
           },
         ],
       },
+      image: "img/preview.png",
       footer: {
         style: "dark",
         links: [

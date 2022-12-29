@@ -41,11 +41,11 @@ export function Badge({ name, link, children }) {
   );
 }
 
-export function Visit({ header, children, link }) {
+export function Visit({ title, children, link }) {
   return (
     <div class="card">
       <div class="card__header">
-        <h3>{header}</h3>
+        <h3>{title}</h3>
       </div>
       <div class="card__body">
         <p>{children}</p>
