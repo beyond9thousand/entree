@@ -8,7 +8,10 @@ Every individual should be able to uphold their right to privacy online, includi
 
 <visit link="https://tosdr.org/" title="Terms of Service; Didn't Read">
 
-Terms of Service; Didn't Read (ToS;DR) is an active project to fix the biggest lie on the web. The project aims to aggregate and summarise the Terms and Conditions and Privacy Policies of websites & services online.
+<thumb
+  children="ToS;DR for short, this is a young project started in June 2012 to help fix the “biggest lie on the web”: almost no one really reads the terms of service we agree to all the time."
+  src="https://s3.tosdr.org/branding/tosdr-icon-32.svg"
+/>
 
 </visit>
 
@@ -45,7 +48,7 @@ Don't pretend that you love to see advertisements.
 
 <expand title="Private DNS">
 
-Starting with android 9, you have the option of enabling seamless ad-block system wide. This is achieved using [private DNS](https://adguard.com/en/blog/adguard-dns-announcement.html) providers.
+Starting with android 9, you have the option of enabling seamless ad-block system wide. This is achieved using [DNS over TLS](https://en.wikipedia.org/wiki/DNS_over_TLS) with the help of [private DNS](https://adguard.com/en/blog/adguard-dns-announcement.html) providers.
 
 To enable ad-blocking through private DNS:
 
@@ -58,6 +61,10 @@ dns.adguard.com
 ```
 
 - Save your settings and continue browsing
+
+**Adguard's DNS doesn't work for me, are there other alternatives?**
+
+Yes. There are several other DNS providers that offer ad-blocking. Look for the DNS-over-TLS sections for each provider in the link provided below. Adguard regularly updates a list of known DNS providers. `tls://` should be removed from the entries before using them on your Android device.
 
 <more link="https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot">
   Find more DNS providers
@@ -83,18 +90,49 @@ Work in progress
 
 ## <FontAwesomeIcon icon="fa-solid fa-lock" /> Password manager
 
-A password manager is a an application designed to store and manage online credentials. Passwords are generally stored in an encrypted database and locked behind a master password. Most applications also offer an in-built password generator. User created passwords are prone to [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack) and inconvenient to maintain across a large number of accounts.
+A password manager is a an application designed to store and manage online credentials. Passwords are generally stored in an [encrypted database](https://www.geeksforgeeks.org/store-password-database/) and locked behind a master password. Most applications also offer an in-built password generator. User created passwords are prone to [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack) and inconvenient to maintain across a large number of accounts.
 
 :::info
 Most modern browsers will also offer password generators and offer to save your login information. Google offers this on Android devices to make the experience more integrated. However, this should not be preferred over [standalone solutions](https://www.zdnet.com/article/is-it-ok-to-use-your-browsers-built-in-password-manager/)
 :::
 
+### Stateless generator
+
+Password generator that does not store any database files online or create one locally. [Learn more here](https://blog.lesspass.com/2016-10-19/how-does-it-work)
+
+<visit link="https://www.lesspass.com/" title="LessPass">
+
+<thumb
+  children="Stop wasting your time synchronizing your encrypted vault. Remember one master password to access your passwords, anywhere, anytime, from any device. No sync needed."
+  src="https://www.lesspass.com/LessPass-icon-white.svg"
+/>
+
+</visit>
+
+<br />
+
+:::success
+This is an excellent choice for handling internet banking. You are only reliant on your master password in combination with a 'site name' & 'login name' which in turn outputs a highly secure password which is unique to that exact combination.
+:::
+
 ### Built-in cloud integration
 
-- [Bitwarden](https://bitwarden.com/)
+Password databases are encrypted but hosted on the provider's servers
+
+<visit link="https://www.lesspass.com/" title="Bitwarden">
+
+<thumb
+  children="Drive collaboration, boost productivity, and experience the power of open source with Bitwarden, the easiest way to secure all your passwords and sensitive information."
+  src="https://github.com/walkxcode/dashboard-icons/raw/main/png/bitwarden.png"
+/>
+
+</visit>
+
 - [LastPass](https://alternativeto.net/outgoing/software/lastpass) <badge name="warning">Proprietary</badge>
 
 ### Manual cloud integration
+
+Setup cloud syncing with a service of your choice or host database files locally
 
 - [KeePassXC](https://keepassxc.org/)
 - [KeepassDX](https://www.keepassdx.com/) <badge name="primary">Android</badge>
@@ -104,13 +142,13 @@ Most modern browsers will also offer password generators and offer to save your 
 [Two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication) or **2FA** is a secondary code in addition to your account password. The code can either be a 6-digit [OTP](https://en.wikipedia.org/wiki/One-time_password) shared with you through your registered phone number. It can also be periodically generated on your mobile device using a [TOTP authenticator](https://www.twilio.com/docs/glossary/totp). A fallback method is usually provided known as [backup codes](https://support.authy.com/hc/en-us/articles/1260803525789-What-is-a-Recovery-or-Backup-Code-) in the event of loss of access to other, more preferable 2FA options.
 
 :::danger
-Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes even for everyday general usage.
+Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes even for general use.
 :::
 
 ### TOTP applications
 
-- [andOTP](https://github.com/andOTP/andOTP) <badge link="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655" name="secondary" >Unmaintained</badge>
 - [Aegis](https://github.com/beemdevelopment/Aegis)
+- [andOTP](https://github.com/andOTP/andOTP) <badge link="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655" name="secondary" >Unmaintained</badge>
 
 ## <FontAwesomeIcon icon="fa-regular fa-envelope" /> Temporary email services
 

@@ -63,15 +63,17 @@ export function Visit({ title, children, link }) {
   );
 }
 
-// import Tabs from "@theme/Tabs";
-
-// export function Tab({ children }) {
-//   return (
-//     <Tabs
-//       style={{
-//       }}
-//     >
-//       {children}
-//     </Tabs>
-//   );
-// }
+export function Thumb({ src, children }) {
+  return (
+    <div
+      style={{
+        width: "45",
+        height: "45px",
+      }}
+      class="avatar"
+    >
+      <img src={src} />
+      <div class="avatar__intro">{children}</div>
+    </div>
+  );
+}
