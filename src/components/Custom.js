@@ -72,7 +72,7 @@ export function Thumb({ src, children }) {
       }}
       class="avatar"
     >
-      <img src={src} />
+      <img src={require(`@site/static/img/${src}`).default} />
       <div class="avatar__intro">{children}</div>
     </div>
   );
