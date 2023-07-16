@@ -8,13 +8,7 @@ module.exports = {
   // globals: {
   //   JSX: true,
   // },
-  extends: [
-    "plugin:mdx/recommended",
-    // "eslint:recommended",
-    "plugin:react-hooks/recommended",
-    // "plugin:react/recommended",
-    "plugin:@docusaurus/recommended",
-  ],
+  extends: ["plugin:@docusaurus/recommended"],
   overrides: [],
   parserOptions: {
     parser: "babel-eslint",
