@@ -65,13 +65,7 @@ export function Visit({ title, children, link }) {
 
 export function Thumb({ src, children }) {
   return (
-    <div
-      style={{
-        width: "45",
-        height: "45px",
-      }}
-      class="avatar"
-    >
+    <div class="avatar">
       <img src={require(`@site/static/img/${src}`).default} />
       <div class="avatar__intro">{children}</div>
     </div>

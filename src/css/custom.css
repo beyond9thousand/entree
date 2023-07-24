@@ -33,6 +33,11 @@
 
 /* Components */
 
+.avatar img {
+    width: 45px;
+    height: 45px;
+}
+
 .alert {
   --ifm-link-color: inherit;
   --ifm-link-decoration: inherit;
