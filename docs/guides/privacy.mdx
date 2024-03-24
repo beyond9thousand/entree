@@ -21,7 +21,7 @@ Every individual should be able to uphold their right to privacy online, includi
 
 ## <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> Search Engines
 
-Popular search engines provided by proprietary companies are known for [tracking user data](https://link.springer.com/article/10.1007/s10618-017-0524-z) and using this information to then throw targeted advertisements at the user. Using a good search engine is the difference between constant intrusion of privacy, favoring [confirmation biases](https://en.wikipedia.org/wiki/Algorithmic_bias) and an uncensored, non-intrusive, informative search experience.
+Many popular search engines collect user data to personalize advertisements. This can limit your exposure to diverse viewpoints and potentially create confirmation bias.  Privacy-focused search engines offer an alternative, prioritizing user privacy and delivering uncensored, informative search results.
 
 <expand title="Searx" >
 
@@ -94,10 +94,10 @@ Work in progress
 
 ## <FontAwesomeIcon icon="fa-solid fa-lock" /> Password manager
 
-A password manager is a an application designed to store and manage online credentials. Passwords are generally stored in an [encrypted database](https://www.geeksforgeeks.org/store-password-database/) and locked behind a master password. Most applications also offer an in-built password generator. User created passwords are prone to [brute-force attacks](https://en.wikipedia.org/wiki/Brute-force_attack) and inconvenient to maintain across a large number of accounts.
+Password managers securely store and manage online login credentials. These applications encrypt passwords in a central vault, accessible only with a master password.  They also often generate strong, unique passwords to prevent brute-force attacks and eliminate the burden of remembering numerous credentials.
 
 :::info
-Most modern browsers will also offer password generators and offer to save your login information. Google offers this on Android devices to make the experience more integrated. However, this should not be preferred over [standalone solutions](https://www.zdnet.com/article/is-it-ok-to-use-your-browsers-built-in-password-manager/)
+While many browsers offer built-in password managers and login saving, these features may not be ideal for optimal security. Standalone password managers often provide stronger encryption, multi-device access, and additional security features not found in browsers.
 :::
 
 ### Stateless generator
@@ -143,10 +143,15 @@ Setup cloud syncing with a service of your choice or host database files locally
 
 ## <FontAwesomeIcon icon="fa-solid fa-fingerprint" /> Two-factor authentication
 
-[Two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication) or **2FA** is a secondary code in addition to your account password. The code can either be a 6-digit [OTP](https://en.wikipedia.org/wiki/One-time_password) shared with you through your registered phone number. It can also be periodically generated on your mobile device using a [TOTP authenticator](https://www.twilio.com/docs/glossary/totp). A fallback method is usually provided known as [backup codes](https://support.authy.com/hc/en-us/articles/1260803525789-What-is-a-Recovery-or-Backup-Code-) in the event of loss of access to other, more preferable 2FA options.
+Two-factor authentication (2FA) adds an extra layer of security to your online accounts. It requires a second code, in addition to your password, to log in. This code can be:
+
+- A 6-digit one-time password (OTP) sent to your registered phone number.
+- Generated periodically on your mobile device using a Time-based One-Time Password (TOTP) authenticator app.
+
+Backup codes are usually provided as a recovery method in case you lose access to your preferred 2FA methods.
 
 :::danger
-Using private messaging services, including social media platforms without activating 2FA is extremely dangerous. You are practically asking to get **hacked, impersonated and doxxed online.** It is highly advised against turning-off 2FA for convenience purposes even for general use.
+Disabling 2FA on private messaging services and social media platforms significantly weakens your account security. This increases the risk of unauthorized access, impersonation, and exposure of private information.  For optimal protection, enabling 2FA is highly recommended.
 :::
 
 ### TOTP applications
