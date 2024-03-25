@@ -1,5 +1,6 @@
 import React from "react";
 import Details from "@theme/Details";
+import clsx from "clsx";
 
 export function Expand({ children, title }) {
   return (
@@ -26,9 +27,9 @@ export function Expand({ children, title }) {
 export function More({ children, link }) {
   return (
     // <div>
-      <a href={link} className="button button--block button--primary">
-        {children}
-      </a>
+    <a href={link} className="button button--block button--primary">
+      {children}
+    </a>
     // </div>
   );
 }
@@ -41,33 +42,57 @@ export function Badge({ name, link, children }) {
   );
 }
 
-export function Visit({ title, children, link }) {
-  return (
-    <div class="card">
-      <div class="card__header">
-        <h3>{title}</h3>
-      </div>
-      <div class="card__body">
-        <p>{children}</p>
-      </div>
-      <div class="card__footer">
-        <a
-          href={link}
-          target="_blank"
-          class="button button--primary button--block"
-        >
-          Visit website
-        </a>
-      </div>
-    </div>
-  );
-}
-
 export function Thumb({ src, children }) {
   return (
     <div class="avatar">
       <img src={require(`@site/static/img/${src}`).default} />
       <div class="avatar__intro">{children}</div>
+    </div>
+  );
+}
+
+function Button({ destination, text }) {
+  return (
+    <a
+      className={clsx("button button--primary button--outline button--lg")}
+      href={destination}
+    >
+      {text}
+    </a>
+  );
+}
+
+// Borrowed from homotechsual
+export function CodeSource({ title, text, button, className }) {
+  return (
+    <span className={clsx("hero__wrapper")}>
+      <section
+        className={clsx("post__hero hero shadow--md bordered", className)}
+      >
+        <div className={clsx("container")}>
+          <h2 className="hero__title">{title}</h2>
+          <p>{text}</p>
+          <div className={clsx("hero__button")}>
+            {Button({ destination: button.destination, text: button.text })}
+          </div>
+        </div>
+      </section>
+    </span>
+  );
+}
+
+export function Visit({ title, children, button }) {
+  return (
+    <div class="card">
+      <div>
+        <h2>{title}</h2>
+      </div>
+      <div class="container">
+        <p>{children}</p>
+      </div>
+      <div className={clsx("hero__button")}>
+        {Button({ destination: button.destination, text: button.text })}
+      </div>
     </div>
   );
 }

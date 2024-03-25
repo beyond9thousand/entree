@@ -19,7 +19,10 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react-hooks", "react", "@docusaurus"],
-  rules: {},
+  rules: {
+    "@docusaurus/no-html-links": "OFF",
+    "@docusaurus/prefer-docusaurus-heading": "OFF",
+  },
   settings: {
     "import/resolver": {
       node: {

@@ -10,18 +10,24 @@ Every individual should be able to uphold their right to privacy online, includi
 
 **_I have read and agree to the terms & conditions_** - One of the biggest, if not **the** [biggest lie](https://advancetitan.com/opinion/2021/09/15/who-really-reads-terms-and-conditions) you'll tell yourself throughout your lifetime on the internet. Terms of service are often too long to read, but it's important to understand what's in them. Your rights online depend on them.
 
-<Visit link="https://tosdr.org/" title="Terms of Service; Didn't Read">
+<Visit
+title="Terms of Service; Didn't Read"
+button={{
+    text: "Terms you agreed to",
+    destination:
+      "https://tosdr.org/",
+  }}>
 
 <Thumb
-  children="ToS;DR for short, this is a young project started in June 2012 to help fix the “biggest lie on the web”: almost no one really reads the terms of service we agree to all the time."
+  children="ToS;DR is a project launched in 2012 to address a common issue: users rarely read online Terms of Service (ToS) agreements.  This initiative aims to improve user awareness of these agreements."
   src="app_icons/tosdr.svg"
 />
-
+  
 </Visit>
 
 ## <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> Search Engines
 
-Many popular search engines collect user data to personalize advertisements. This can limit your exposure to diverse viewpoints and potentially create confirmation bias.  Privacy-focused search engines offer an alternative, prioritizing user privacy and delivering uncensored, informative search results.
+Many popular search engines collect user data to personalize advertisements. This can limit your exposure to diverse viewpoints and potentially create confirmation bias. Privacy-focused search engines offer an alternative, prioritizing user privacy and delivering uncensored, informative search results.
 
 <Expand title="Searx" >
 
@@ -37,11 +43,6 @@ To that end, Searx does not share users' IP addresses or search history with the
 - [Startpage](https://www.startpage.com/)
 - [Brave Search](https://search.brave.com/)
 - [Duckduckgo](https://duckduckgo.com/) <Badge link="https://9to5mac.com/2022/05/25/duckduckgo-privacy-microsoft-permission-tracking/" name="warning">Controversial</Badge>
-
-<Visit link="https://searchengine.party/" title="Compare search engines">
-  Web page for comparing popular search engines across some privacy-centric data
-  points.
-</Visit>
 
 ## <FontAwesomeIcon icon="fa-solid fa-ban" /> Ad-blocking
 
@@ -94,7 +95,7 @@ Work in progress
 
 ## <FontAwesomeIcon icon="fa-solid fa-lock" /> Password manager
 
-Password managers securely store and manage online login credentials. These applications encrypt passwords in a central vault, accessible only with a master password.  They also often generate strong, unique passwords to prevent brute-force attacks and eliminate the burden of remembering numerous credentials.
+Password managers securely store and manage online login credentials. These applications encrypt passwords in a central vault, accessible only with a master password. They also often generate strong, unique passwords to prevent brute-force attacks and eliminate the burden of remembering numerous credentials.
 
 :::info
 While many browsers offer built-in password managers and login saving, these features may not be ideal for optimal security. Standalone password managers often provide stronger encryption, multi-device access, and additional security features not found in browsers.
@@ -102,9 +103,14 @@ While many browsers offer built-in password managers and login saving, these fea
 
 ### Stateless generator
 
-Password generator that does not store any database files online or create one locally. [Learn more here](https://blog.lesspass.com/2016-10-19/how-does-it-work)
+Password generator that does not store any database files online or create one locally. [learn more here](https://blog.lesspass.com/2016-10-19/how-does-it-work)
 
-<Visit link="https://www.lesspass.com/" title="LessPass">
+<Visit 
+title="LessPass"
+button={{
+  text:"Forgot your password?",
+  destination:"https://www.lesspass.com/"
+}}>
 
 <Thumb
   children="Stop wasting your time synchronizing your encrypted vault. Remember one master password to access your passwords, anywhere, anytime, from any device. No sync needed."
@@ -123,7 +129,13 @@ This is an excellent choice for handling internet banking. You are only reliant 
 
 Password databases are encrypted but hosted on the provider's servers
 
-<Visit link="https://www.lesspass.com/" title="Bitwarden">
+<Visit 
+title="Bitwarden"
+button={{
+  text:"Remember password for this site",
+  destination:"https://bitwarden.com/"
+}}
+>
 
 <Thumb
   children="Drive collaboration, boost productivity, and experience the power of open source with Bitwarden, the easiest way to secure all your passwords and sensitive information."
@@ -131,6 +143,8 @@ Password databases are encrypted but hosted on the provider's servers
 />
 
 </Visit>
+
+<br></br>
 
 - [LastPass](https://alternativeto.net/outgoing/software/lastpass) <Badge name="warning">Proprietary</Badge>
 
@@ -146,17 +160,29 @@ Setup cloud syncing with a service of your choice or host database files locally
 Two-factor authentication (2FA) adds an extra layer of security to your online accounts. It requires a second code, in addition to your password, to log in. This code can be:
 
 - A 6-digit one-time password (OTP) sent to your registered phone number.
-- Generated periodically on your mobile device using a Time-based One-Time Password (TOTP) authenticator app.
+- Generated periodically on your mobile device using a Time-based One-Time Password ([TOTP](https://datatracker.ietf.org/doc/html/rfc6238)) authenticator app.
 
 Backup codes are usually provided as a recovery method in case you lose access to your preferred 2FA methods.
 
 :::danger
-Disabling 2FA on private messaging services and social media platforms significantly weakens your account security. This increases the risk of unauthorized access, impersonation, and exposure of private information.  For optimal protection, enabling 2FA is highly recommended.
+Disabling 2FA on private messaging services and social media platforms significantly weakens your account security. This increases the risk of unauthorized access, impersonation, and exposure of private information. For optimal protection, enabling 2FA is highly recommended.
 :::
 
 ### TOTP applications
 
-- [Aegis](https://github.com/beemdevelopment/Aegis)
+<Visit
+title="Aegis Authenticator"
+button={{
+  text:"Level Up Your Account Security"
+}}>
+
+<Thumb
+children="Aegis Authenticator, a free, open-source Android app, offers robust 2FA with encrypted storage for tokens and backups, prioritizing user control and security."
+src="app_icons/aegis.png"/>
+</Visit>
+
+<br></br>
+
 - [andOTP](https://github.com/andOTP/andOTP) <Badge link="https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655" name="secondary" >Unmaintained</Badge>
 
 ## <FontAwesomeIcon icon="fa-regular fa-envelope" /> Temporary email services

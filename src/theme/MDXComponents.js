@@ -8,7 +8,7 @@ import {
   Badge,
   Visit,
   Thumb,
-  Tab,
+  CodeSource,
 } from "@site/src/components/Custom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -33,4 +33,5 @@ export default {
   Thumb,
   Badge,
   Visit,
+  CodeSource,
 };
