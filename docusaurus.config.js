@@ -29,7 +29,7 @@ module.exports = {
   baseUrl: "/entree/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/b9klogo.png",
+  favicon: "img/b9klogo.svg",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -86,8 +86,8 @@ module.exports = {
         title: "beyond9thousand",
         logo: {
           alt: "My Site Logo",
-          src: "img/b9klogo_dark.png",
-          srcDark: "img/b9klogo.png",
+          src: "img/b9klogo_dark.svg",
+          srcDark: "img/b9klogo.svg",
         },
         items: [
           // {
