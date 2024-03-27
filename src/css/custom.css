@@ -150,6 +150,10 @@
   font-weight: 450;
 }
 
+.button {
+  white-space: normal;
+}
+
 /* Accomodation for variation in size */
 @media (orientation: portrait) {
   .hero__subtitle {
