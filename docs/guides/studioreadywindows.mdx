@@ -159,22 +159,20 @@ button={{
 
 Since Tailscale creates a secure, private network between your devices, you'll need to use the **Tailscale IP address** of the remote PC to connect with TightVNC. This is a special IP address in the `100.x.x.x` range that is assigned by Tailscale and remains stable no matter where the computer is located.
 
-<Expand title="On the PC You Want to Control (the Host)">
+<Expand title="Instructions for Host PC">
 
 - **Set a password**: A password is required to connect to the host PC. When the TightVNC Server first runs, you will be prompted to set a `VNC Password` for full control and, optionally, a `View-Only Password` if you want to allow someone to just view your screen.
 - **Find the PC's Tailscale IP address**: Find the Tailscale icon in your system tray (bottom right corner of the screen, next to the clock). Click on it and you will see a list of your connected devices, along with their assigned `100.x.x.x` IP address. You can copy this address to your clipboard to use it later.
 
 </Expand>
 
-<Expand title="On the PC You Are Using to Control (the Guest)">
+<Expand title="Instructions for Guest PC">
 
 - **Open the viewer**: Run the TightVNC Viewer program on the guest PC.
 - **Enter the host PC's Tailscale IP address**: In the `Remote Host` field, type the Tailscale IP address you found from the host PC.
 - **Connect and enter the password**: Click the `Connect` button. A window will pop up asking for the VNC Password you set earlier. Enter the password, and you should be able to see and control the host PC's desktop.
 
 </Expand>
-
-{/* <i class="fa-solid fa-compact-disc"></i> */}
 
 ## <FontAwesomeIcon icon="fa-solid fa-compact-disc" /> NVIDIA Graphics Drivers
 
