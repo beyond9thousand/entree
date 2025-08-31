@@ -27,7 +27,11 @@ export function Expand({ children, title }) {
 export function More({ children, link }) {
   return (
     // <div>
-    <a href={link} className="button button--block button--primary">
+    <a
+      href={link}
+      target="_blank"
+      className="button button--block button--primary"
+    >
       {children}
     </a>
     // </div>
@@ -56,28 +60,10 @@ function Button({ destination, text }) {
     <a
       className={clsx("button button--primary button--outline button--lg")}
       href={destination}
+      target="_blank"
     >
       {text}
     </a>
-  );
-}
-
-// Borrowed from homotechsual
-export function CodeSource({ title, text, button, className }) {
-  return (
-    <span className={clsx("hero__wrapper")}>
-      <section
-        className={clsx("post__hero hero shadow--md bordered", className)}
-      >
-        <div className={clsx("container")}>
-          <h2 className="hero__title">{title}</h2>
-          <p>{text}</p>
-          <div className={clsx("hero__button")}>
-            {Button({ destination: button.destination, text: button.text })}
-          </div>
-        </div>
-      </section>
-    </span>
   );
 }
 
@@ -94,5 +80,25 @@ export function Visit({ title, children, button }) {
         {Button({ destination: button.destination, text: button.text })}
       </div>
     </div>
+  );
+}
+
+// NOT IN USE
+// Borrowed from homotechsual
+export function CodeSource({ title, text, button, className }) {
+  return (
+    <span className={clsx("hero__wrapper")}>
+      <section
+        className={clsx("post__hero hero shadow--md bordered", className)}
+      >
+        <div className={clsx("container")}>
+          <h2 className="hero__title">{title}</h2>
+          <p>{text}</p>
+          <div className={clsx("hero__button")}>
+            {Button({ destination: button.destination, text: button.text })}
+          </div>
+        </div>
+      </section>
+    </span>
   );
 }
