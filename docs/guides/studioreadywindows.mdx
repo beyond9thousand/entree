@@ -1,0 +1,248 @@
+---
+sidebar_position: 1
+---
+
+# Studio Ready Windows
+
+Here is my guide for a studio-ready Windows installation. It's based on my personal expertise and knowledge as a creative head, tailored to optimize a PC for creative work and studio environments. This should be considered the blueprint for a lean, efficient, and reliable system, free of unnecessary software and potential conflicts.
+
+## <FontAwesomeIcon icon="fa-brands fa-windows" /> Custom Windows Installation ISO
+
+<Visit
+title="UUP dump"
+button={{
+    text: "Choose your Windows Edition",
+    destination:
+      "https://uupdump.net/",
+  }}>
+
+<Thumb
+  children="UUP Dump lets you create a custom Windows ISO file. This is useful for getting a Windows installer with the latest updates or specific editions already included."
+  src="app_icons/uupdump.svg"
+/>
+  
+</Visit>
+
+<br />
+
+<Expand title="Generate your Custom Windows ISO">
+
+- Go to the [website](https://uupdump.net/)
+- Select a Windows build you want to download.
+- Choose your desired language and the specific Windows editions you want to include
+- Click **Create download package** to download a small ZIP file
+- Extract the ZIP file and run the script inside (it will have a `.cmd` extension) to start the download and build process for your custom ISO
+
+:::info
+After the `uup_download_windows.cmd` script has completed the download and conversion process, the generated ISO file will be located in the same folder where you extracted the UUP Dump tool's ZIP archive. You will see a new ISO file with a name that corresponds to the Windows build you chose, like `26200.5751_en-us_professional_amd64.iso.`
+:::
+
+</Expand>
+
+## <FontAwesomeIcon icon="fa-solid fa-rotate" /> Pausing Windows Updates
+
+You can use the **Registry Editor** to pause Windows updates for a very long time, which is useful if you want more control over when updates are installed. Be careful when editing the registry, as incorrect changes can cause system problems.
+
+- Open the **Registry Editor** by pressing the **Windows Key** and searching for `Regedit`
+- Navigate to the following path:
+
+```
+HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
+```
+
+- Find or create a **DWORD (32-bit) Value** named `FlightSettingsMaxPauseDays`
+- Double-click on it, select `Decimal`, and change the `Value data` to a high number like **`365`** to pause updates for a year
+- Click **OK** to save your changes
+
+## <FontAwesomeIcon icon="fa-solid fa-network-wired" /> Shared Folder Access
+
+:::info
+Error Message: `You can't access this shared folder because your organization's security policies block unauthenticated guest access.` It involves a simple change in the **Registry Editor** to allow guest access to shared folders.
+:::
+
+- Open the **Registry Editor** by searching for `Regedit` in the Start menu
+- Navigate to the following path:
+
+```
+HKLM\SYSTEM\CurrentControlControlSet\Services\LanmanWorkstation\Parameters
+```
+
+- Find or create a **DWORD (32-bit) Value** named `AllowInsecureGuestAuth`
+- Double-click on it and set its `Value data` to **`1`**
+- Click **OK** and restart your computer for the change to take effect
+
+## <FontAwesomeIcon icon="fa-solid fa-unlock-keyhole" /> Authorise Remote Access
+
+Prevent Windows from locking you out of your account when using remote desktop tools like [VNC](https://en.wikipedia.org/wiki/VNC). Sometimes, the Windows security feature that protects against too many failed login attempts can get confused and see your successful remote connection as a threat. By following these steps, you will disable this feature entirely.
+
+- Open the **Group Policy Editor** by pressing the **Windows Key + R**, typing `gpedit.msc`, and pressing **Enter**
+- Navigate to `Computer Configuration` > `Windows Settings` > `Security Settings` > `Account Policies` > `Account Lockout Policy`
+- Double-click on **Account lockout threshold**
+- Change the number of invalid login attempts to **`0`** and click **OK**
+
+## <FontAwesomeIcon icon="fa-solid fa-ban" /> Disabling Secure Boot
+
+[Secure Boot](https://www.reddit.com/r/pcmasterrace/comments/xrhmq2/secure_boot_what_are_the_downsides/) is a security feature that prevents unauthorized software from loading during the boot process. While it's great for security, it can sometimes block you from using certain bootable USB drives, especially older or custom ones. Disabling it can help you get around this. The exact steps vary by motherboard manufacturer, but the general process is the same.
+
+- Restart your PC and enter your BIOS/UEFI firmware settings. This is usually done by pressing a key like **F2**, **F10**, **F12**, or **Del** as soon as the computer starts.
+- Once in the BIOS, find the **Secure Boot** setting. It's often located under the **Boot**, **Security**, or **Authentication** sections.
+- Change the setting from `Enabled` to `Disabled`.
+- Save your changes and exit the BIOS. The PC will then restart.
+
+## <FontAwesomeIcon icon="fa-solid fa-cubes" /> Package Managers
+
+Package managers are tools that automate the installation and management of software. Instead of searching the web for an installer, you can use a single command to install a program. **Scoop** and **Winget** are two popular package managers for Windows that install license-free software
+
+### Install Scoop
+
+- Open **PowerShell** as an administrator.
+- Run the command:
+
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+- Then, run the command:
+
+```
+irm get.scoop.sh | iex
+```
+
+### Install Winget
+
+- Winget is pre-installed on most modern Windows 10 and 11 systems.
+
+:::info
+On a newly installed Windows system, Winget might not work right away. This is because the `App Installer` app in the Microsoft Store needs to be updated. Open the Microsoft Store, go to the `Library` section, and update the `App Installer` to fix this.
+:::
+
+## <FontAwesomeIcon icon="fa-solid fa-house-laptop" /> Remote Access & File Sharing
+
+<Visit
+title="Tailscale"
+button={{
+    text: "Secure your Network",
+    destination:
+      "https://tailscale.com/",
+  }}>
+
+<Thumb
+  children="Tailscale helps you access shared folders and remote desktops, wherever you are. It’s useful for safe file access and remote control with tools like TightVNC"
+  src="app_icons/tailscale.svg"
+/>
+  
+</Visit>
+
+<br />
+
+- Install Tailscale on all the devices you want to connect.
+- Log in to the same Tailscale account on each device.
+- Once connected, you can access shared folders on a remote PC by typing the device's **Tailscale IP address** into File Explorer. For example, you can type `\\100.x.x.x` in the address bar to see shared folders on that device.
+- You can also use this same IP address to connect with TightVNC, providing a secure and simple way to access your desktop from anywhere.
+
+<Visit
+title="TightVNC"
+button={{
+    text: "VNC Client & Server",
+    destination:
+      "https://www.tightvnc.com/",
+  }}>
+
+<Thumb
+  children="TightVNC is a free, open-source remote desktop application that provides reliable remote access to your PC. Unlike some built-in tools, it can often provide a more stable and uninterrupted connection."
+  src="app_icons/tightvnc.svg"
+/>
+  
+</Visit>
+
+<br />
+
+Since Tailscale creates a secure, private network between your devices, you'll need to use the **Tailscale IP address** of the remote PC to connect with TightVNC. This is a special IP address in the `100.x.x.x` range that is assigned by Tailscale and remains stable no matter where the computer is located.
+
+<Expand title="On the PC You Want to Control (the Host)">
+
+- **Set a password**: A password is required to connect to the host PC. When the TightVNC Server first runs, you will be prompted to set a `VNC Password` for full control and, optionally, a `View-Only Password` if you want to allow someone to just view your screen.
+- **Find the PC's Tailscale IP address**: Find the Tailscale icon in your system tray (bottom right corner of the screen, next to the clock). Click on it and you will see a list of your connected devices, along with their assigned `100.x.x.x` IP address. You can copy this address to your clipboard to use it later.
+
+</Expand>
+
+<Expand title="On the PC You Are Using to Control (the Guest)">
+
+- **Open the viewer**: Run the TightVNC Viewer program on the guest PC.
+- **Enter the host PC's Tailscale IP address**: In the `Remote Host` field, type the Tailscale IP address you found from the host PC.
+- **Connect and enter the password**: Click the `Connect` button. A window will pop up asking for the VNC Password you set earlier. Enter the password, and you should be able to see and control the host PC's desktop.
+
+</Expand>
+
+{/* <i class="fa-solid fa-compact-disc"></i> */}
+
+## <FontAwesomeIcon icon="fa-solid fa-compact-disc" /> NVIDIA Graphics Drivers
+
+<Visit
+title="NVCleanstall"
+button={{
+    text: "Debloated GPU Drivers",
+    destination:
+      "https://www.techpowerup.com/nvcleanstall/",
+  }}>
+
+<Thumb
+  children="Get a clean, debloated NVIDIA driver with NVCleanstall. It lets you choose only the drivers and features you need, avoiding unnecessary components for a cleaner setup and potentially better performance."
+  src="app_icons/nvcleanstall.png"
+/>
+  
+</Visit>
+
+<br />
+
+- Double-click the file to start
+- It will show you the latest one, but you can choose another
+- You will see a list of everything included in the driver. Just **uncheck** what you don't want, like `GeForce Experience` or extra telemetry, to make the driver smaller
+- You can check the `Clean Install` box to remove all old drivers first
+- Click `Build Package` and wait. The app will download your selected parts and make a custom installer
+- A new installer window will pop up. Follow the steps to install your new, customized driver
+
+{/* ## Fort Firewall
+
+**Fort Firewall** is an easy-to-use, open-source firewall that lets you control which applications can access the internet. It provides a simple interface to block or allow connections, giving you more granular control over your network security.
+
+- **Installation via Winget:**
+
+  1.  Open Command Prompt or Windows Terminal.
+  2.  Run the command: `winget install -id "FortSoft.FortFirewall"`
+
+- **Installation via official website:**
+  1.  Go to the official GitHub releases page for Fort Firewall: `https://github.com/tnodir/fort/releases`.
+  2.  Download the latest installer file for your Windows version (e.g., `FortFirewall-x.xx.x-windows10-x86_64.exe`).
+  3.  Run the downloaded executable file to install the program.
+
+---
+
+## WinToys
+
+**WinToys** is a tool that helps you optimize Windows performance and improve the user experience. It's often used to debloat Windows by removing unnecessary apps and services, and it provides a simple interface for tweaking system settings to improve speed and privacy.
+
+- **Installation via Winget:**
+
+  1.  Open Command Prompt or Windows Terminal.
+  2.  Run the command: `winget install wintoys`
+
+- **Installation via Microsoft Store:**
+  1.  Go to the official Microsoft Store page for WinToys: `https://apps.microsoft.com/detail/9p8ltpgcbzxd`.
+  2.  Click the **"Get"** or **"Install"** button to download and install the app directly from the store.
+
+---
+
+## **PowerToys**
+
+**PowerToys** is a suite of handy tools created by Microsoft to add new, powerful features to Windows. It includes a variety of utilities like FancyZones for advanced window management, a color picker, a keyboard manager, and a file renaming tool, all designed to make your daily tasks easier.
+
+- **Installation via Winget:**
+
+  1.  Open Command Prompt or Windows Terminal.
+  2.  Run the command: `winget install Microsoft.PowerToys`
+
+- **Installation via official website/Microsoft Store:**
+  1.  Go to the official PowerToys GitHub releases page: `https://github.com/microsoft/PowerToys/releases`.
+  2.  Download the latest `PowerToysSetup-x.x.x-x64.exe` installer file.
+  3.  Alternatively, you can find it directly in the Microsoft Store by searching for **PowerToys**. */}
